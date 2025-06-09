@@ -1,5 +1,5 @@
 // API configuration based on environment
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || '';
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'https://dev-bruttobar.apprunner.dk/';
 
 export const getApiUrl = (endpoint: string): string => {
     // In development, we use the proxy (empty base URL)

@@ -5,8 +5,9 @@ export default function LoginScreen({ login }: { login: (u: string, p: string) =
     const [error, setError] = useState<string | null>(null);
 
     return (
-        <div className="max-w-sm mx-auto mt-20 space-y-4">
-            <h1 className="text-2xl font-semibold">Log in to Bruttobar</h1>
+        <div className="max-w-sm mx-auto mt-20 space-y-4 p-3">
+            <h1 className="text-2xl font-semibold">Bruttobar</h1>
+            <p>Brug dit kodeord til Lange Intra her.</p>
             <input
                 className="w-full p-2 border rounded"
                 placeholder="Email"
@@ -27,11 +28,11 @@ export default function LoginScreen({ login }: { login: (u: string, p: string) =
                     try {
                         await login(form.username, form.password);
                     } catch (err: any) {
-                        setError(err.message || 'Login failed');
+                        setError(err.message || 'Login fejlede');
                     }
                 }}
             >
-                Log in
+                Log ind
             </button>
         </div>
     );

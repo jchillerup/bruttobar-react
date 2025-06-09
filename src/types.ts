@@ -4,4 +4,5 @@ export interface Item {
   description: string;
   logoUrl: string;
   price: number;
+  eventId: number; // an 'event' is a storefront 
 }

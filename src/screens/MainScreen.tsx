@@ -90,7 +90,7 @@ export default function MainScreen({ token }: { token: string }) {
                                                 }`}
                                         >
                                             <img
-                                                src={item.image || 'https://via.placeholder.com/40?text=🍹'}
+                                                src={item.image || 'https://placehold.co/40?text=?'}
                                                 alt=""
                                                 className="w-10 h-10 rounded bg-gray-100 object-cover"
                                             />
@@ -118,6 +118,7 @@ export default function MainScreen({ token }: { token: string }) {
                                                                 price: parsedPrice,
                                                                 logoUrl: item.image ?? '',
                                                                 description: item.description ?? '',
+                                                                eventId: event.id,
                                                             })
                                                         }
                                                         className="px-2 py-1 bg-gray-300 hover:bg-gray-400 text-sm font-semibold rounded-l"
@@ -133,6 +134,7 @@ export default function MainScreen({ token }: { token: string }) {
                                                                 price: parsedPrice,
                                                                 logoUrl: item.image ?? '',
                                                                 description: item.description ?? '',
+                                                                eventId: event.id,
                                                             })
                                                         }
                                                         className="px-2 py-1 bg-gray-300 hover:bg-gray-400 text-sm font-semibold rounded-r"
