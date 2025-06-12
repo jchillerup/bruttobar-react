@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { getApiUrl } from '../config/api';
 
-const TOKEN_KEY = 'bruttobar__jwt';
+const TOKEN_KEY = 'bruttobar___jwt';
 
 export function useAuth() {
     const [token, setToken] = useState<string | null>(null);

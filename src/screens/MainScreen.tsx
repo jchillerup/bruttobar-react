@@ -83,6 +83,8 @@ export default function MainScreen({ token }: { token: string }) {
                                     const inCart = qty > 0;
                                     const parsedPrice = parseFloat(item.price);
 
+                                    const item2 = Item();
+
                                     return (
                                         <li
                                             key={item.id}
